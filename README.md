@@ -142,10 +142,29 @@ Now deploy it to the Solana devnet:
 
 ```bash
 anchor deploy --provider.cluster https://
+```
 
 ### The Test
 
+Test resides in the tests directory. To run them use:
 
-## Acknowledgements
+```bash
+anchor test --provider.cluster https://solana-devnet.g.alchemy.com/v2/<YOUR-API-KEY>
+```
 
-This is based on the Alchemy Hello-World example.  Visit their website for a more in-depth explanation.
+## Create Web3 app using Next.js
+
+```bash
+yarn create next-app --typescript app
+```
+
+```bash
+cd app
+yarn add @project-serum/anchor @solana/web3.js @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-wallets @solana/wallet-adapter-base
+```
+
+```bash
+yarn dev
+```
+
+For files added and modified see the git log.
